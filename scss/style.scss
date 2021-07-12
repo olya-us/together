@@ -1,0 +1,68 @@
+// @import "person";
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  background: #fff;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway',sans-serif !important;
+  font-size: 18px;
+}
+
+h2.main-title{
+  font-size: 30px;
+  color: #000;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 800;
+  &-white{
+    @extend .main-title;
+    color: #fff;
+  }
+}
+
+img{
+  width: 100%;
+}
+
+.reasons{
+  padding: 65px 0 80px;
+  h2{
+    margin-bottom: 70px;
+  }
+  p{
+    max-width: 550px;
+    margin: 0 auto 1rem;
+  }
+}
+
+.offering{
+  padding: 65px 0 75px;
+  background: linear-gradient(91.94deg, #0086F2 -5.4%, #A346B0 123.49%);
+  h2{
+    margin-bottom: 50px;
+  }
+  
+}
+
+  // @media (max-width: 992px) {
+
+  //   }
+  // }
+
+  // @media (max-width: 576px) {
+
+  // }
+
+
+
+
+  
+
