@@ -7,7 +7,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  color: #000;
+  color: #090909;
   display: flex;
   flex-direction: column;
   font-family: 'Raleway',sans-serif !important;
@@ -37,3 +37,86 @@ img {
   background: linear-gradient(91.94deg, #0086F2 -5.4%, #A346B0 123.49%); }
   .offering h2 {
     margin-bottom: 50px; }
+  .offering .offering-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .offering .offering-item {
+    text-align: center;
+    width: 20%; }
+    .offering .offering-item img {
+      width: auto;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      padding: 20px;
+      margin-bottom: 25px; }
+    .offering .offering-item p {
+      font-size: 12px;
+      color: #fff;
+      max-width: 150px;
+      margin: 0 auto; }
+
+.test {
+  padding: 65px 0 75px; }
+  .test .main-title, .test h2.main-title-white {
+    max-width: 490px;
+    margin: 0 auto 20px; }
+  .test .test-cards {
+    display: flex;
+    margin-top: 65px;
+    justify-content: space-between; }
+    .test .test-cards .test-card {
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+      width: 32%; }
+      .test .test-cards .test-card .test-card-body {
+        padding: 25px 35px;
+        border-bottom: 1px solid #EAEAEA;
+        height: 135px; }
+        .test .test-cards .test-card .test-card-body p {
+          font-size: 20px;
+          max-width: 240px;
+          line-height: 26px; }
+          .test .test-cards .test-card .test-card-body p.blue {
+            margin: 0;
+            color: #1577C4; }
+      .test .test-cards .test-card .test-card-footer {
+        padding: 15px 35px; }
+        .test .test-cards .test-card .test-card-footer a {
+          background: #1577C4;
+          color: #fff;
+          border-radius: 5px;
+          width: 100%;
+          display: block;
+          text-align: center;
+          text-decoration: none;
+          font-size: 14px;
+          padding: 9px;
+          font-weight: 600; }
+
+.courses .main-title, .courses h2.main-title-white {
+  margin-bottom: 20px; }
+
+.courses .pretitle-text {
+  max-width: 955px;
+  margin: 0 auto; }
+
+.questions {
+  padding: 65px 0 75px; }
+  .questions form {
+    max-width: 835px;
+    margin: 70px auto 0; }
+    .questions form input {
+      width: 50%;
+      background: #25A5F233;
+      border: none;
+      padding: 10px;
+      color: #000;
+      border-radius: 5px; }
+    .questions form textarea {
+      width: 100%;
+      resize: none;
+      height: 200px;
+      background: #25A5F233;
+      border-radius: 5px;
+      border: none; }
