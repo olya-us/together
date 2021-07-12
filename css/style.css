@@ -1,3 +1,21 @@
+.footer {
+  background: #23252C;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 50px 0 100px 0; }
+  .footer .contacts {
+    display: flex;
+    margin-bottom: 30px; }
+    .footer .contacts .contacts-wrap:not(:last-child) {
+      margin-right: 30px; }
+    .footer .contacts p {
+      max-width: 100px;
+      margin: 0;
+      font-size: 12px;
+      font-weight: 400px; }
+      .footer .contacts p.number {
+        font-weight: 500; }
+
 html {
   overflow-x: hidden; }
 
@@ -105,18 +123,30 @@ img {
   padding: 65px 0 75px; }
   .questions form {
     max-width: 835px;
-    margin: 70px auto 0; }
-    .questions form input {
-      width: 50%;
-      background: #25A5F233;
-      border: none;
-      padding: 10px;
-      color: #000;
-      border-radius: 5px; }
+    margin: 60px auto 0; }
+    .questions form .input-group {
+      display: flex;
+      justify-content: space-between; }
+      .questions form .input-group input {
+        width: 48%;
+        background: #25A5F233;
+        border: none;
+        padding: 10px;
+        color: #000;
+        border-radius: 5px; }
     .questions form textarea {
+      margin: 20px 0;
       width: 100%;
       resize: none;
       height: 200px;
       background: #25A5F233;
       border-radius: 5px;
       border: none; }
+    .questions form .agreed {
+      display: flex; }
+      .questions form .agreed input {
+        margin: 0 30px 0 10px; }
+      .questions form .agreed p {
+        font-size: 8px; }
+        .questions form .agreed p a {
+          text-decoration: none; }

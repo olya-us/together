@@ -1,0 +1,22 @@
+.footer{
+    background: #23252C;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 50px 0 100px 0;
+    .contacts{
+        display: flex;
+        margin-bottom: 30px;
+        .contacts-wrap:not(:last-child) {
+            margin-right: 30px;
+        }
+        p{
+            max-width: 100px;
+            margin: 0;
+            font-size: 12px;
+            font-weight: 400px;
+            &.number{
+                font-weight: 500;
+            }
+        }
+    }
+}

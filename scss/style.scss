@@ -1,4 +1,4 @@
-// @import "person";
+ @import "footer";
 
 html{
   overflow-x: hidden;
@@ -134,22 +134,39 @@ img{
   padding: 65px 0 75px;
   form{
     max-width: 835px;
-    margin: 70px auto 0;
-    input{
-      width: 50%;
-      background: #25A5F233;
-      border: none;
-      padding: 10px;
-      color: #000;
-      border-radius: 5px;
+    margin: 60px auto 0;
+    .input-group{
+      display:flex;
+      justify-content: space-between;
+      input {
+        width: 48%;
+        background: #25A5F233;
+        border: none;
+        padding: 10px;
+        color: #000;
+        border-radius: 5px;
+      }
     }
     textarea{
+      margin:20px 0;
       width: 100%;
       resize: none;
       height: 200px;
       background: #25A5F233;
       border-radius: 5px;
       border: none;
+    }
+    .agreed{
+      display: flex;
+      input{
+        margin: 0 30px 0 10px;
+      }
+      p{
+        font-size: 8px;
+        a{
+          text-decoration: none;
+        }
+      }
     }
   }
 }
