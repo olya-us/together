@@ -21,6 +21,23 @@
         </div>
     </header> 
 
+    <div class="slider">
+        <div class="imgs">
+          <div class="img" style="left: 0;"> 
+            <div class="slider-wrap">
+                <h1>Учите польский вместе с TOGETHER</h1>
+                <p>Мы счастливы приветствовать всех, кто хочет выучить польский язык и поближе познакомиться с нашей замечательной страной!</p>
+                <a class="button-gradient" href="">Попробовать бесплатно</a>
+            </div>
+          </div>
+          <div class="img">
+          </div>
+          <div class="img">
+          </div>
+        </div>
+        <div class="dots"></div>
+    </div>
+
     <section class="reasons">
         <div class="container">
             <div class="row">
@@ -47,23 +64,33 @@
                 <div class="col-lg-12">
                     <div class="offering-items">
                         <div class="offering-item">
-                            <img src="./images/placeholder.svg" alt="">
+                            <div class="offering-border">
+                                <img src="./images/placeholder.svg" alt="">
+                            </div>
                             <p>Удобную локация в Варшаве и Кракове</p>
                         </div>
                         <div class="offering-item">
-                            <img src="./images/talk.svg" alt="">
+                            <div class="offering-border">
+                                <img src="./images/talk.svg" alt="">
+                            </div>
                             <p>Разговорный клуб</p>
                         </div>
                         <div class="offering-item">
-                            <img src="./images/diploma.svg" alt="">
+                            <div class="offering-border">
+                                <img src="./images/diploma.svg" alt="">
+                            </div>
                             <p>Сертификат знания языка</p>
                         </div>
                         <div class="offering-item">
-                            <img src="./images/excursion.svg" alt="">
+                            <div class="offering-border">
+                                <img src="./images/excursion.svg" alt="">
+                            </div>
                             <p>Экскурсии</p>
                         </div>
                         <div class="offering-item">
-                            <img src="./images/price-tag.svg" alt="">
+                            <div class="offering-border">
+                                <img src="./images/price-tag.svg" alt="">
+                            </div>
                             <p>Доступные цены и гибкую систему оплат</p>
                         </div>
                     </div>
@@ -120,6 +147,32 @@
                 <div class="col-lg-12">
                     <h2 class="main-title text-center">Наши курсы польского языка</h2>
                     <p class="pretitle-text text-center">Мы предлагаем групповые и индивидуальные курсы польского языка в Варшаве, а также уникальные программы медицинской и деловой лексики, польский для корпоративного обучения, специальные курсы польского языка для детей.</p>
+                    <div class="tab">
+                        <div class="tabmenu-wrap">
+                            <!-- tab-nav -->
+                            <div class="tab-nav">
+                              <span class="nav on"><a href="#tabcon-01">Варшава</a></span>
+                              <span class="nav"><a href="#tabcon-02">Краков</a></span>
+                              <span class="nav"><a href="#tabcon-03">Лодзь</a></span>
+                              <a href="#" class="button-gradient">Скидки</a>
+                            </div>
+                            <!-- //tab-nav -->
+                          
+                            <!-- tab-con -->
+                            <div class="tab-con">
+                              <div id="tabcon-01" class="con-box" style="display: block;">
+                                The ideals which have lighted my way, and time after time have given me new courage to face life cheerfully, have been Kindness, Beauty, and Truth. The trite subjects of human efforts, possessions, outward success, luxury have always seemed to me contemptible.
+                              </div>
+                              <div id="tabcon-02" class="con-box">
+                                Everything has its wonders, even darkness and silence, and I learn, whatever state I am in, therein to be content.
+                              </div>
+                              <div id="tabcon-03" class="con-box">
+                                In order for people to be happy, sometimes they have to take risks. It's true these risks can put them in danger of being hurt.
+                              </div>
+                            </div>
+                            <!-- //tab-con -->
+                          </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,14 +185,33 @@
                     <h2 class="main-title text-center">Задайте нам вопрос</h2>
                     <form name="questions" method="post">
                         <div class="input-group">
-                            <input type="text" name="name">
-                            <input type="email" name="email">
+                            <div class="form-group name-group">
+                                <div class="palceholder">
+                                    <label for="name">Имя</label>
+                                    <span class="star">*</span>
+                                </div>
+                                <input type="text" class="form-controller" name="name" autocomplete="off" required>
+                            </div>
+                            <div class="form-group name-group">
+                                <div class="palceholder">
+                                  <label for="email">Email</label>
+                                  <span class="star">*</span>
+                                </div>
+                                <input type="email" class="form-controller" name="email" autocomplete="off" required>
+                            </div>
+                            <div class="form-group textarea">
+                                <div class="palceholder">
+                                  <label for="comment">Вопрос</label>
+                                  <span class="star">*</span>
+                                </div>
+                                <textarea name="comment" cols="40" class="form-controller" required></textarea>
+                            </div>
                         </div>
-                        <textarea name="comment" cols="40"></textarea>
                         <div class="agreed">
                             <input type="checkbox">
                             <p>Нажимая на кнопку "Отправить", я даю согласие на обработку моих персональных данных Администратором - Школой польского языка Together в лице Michał Suchożebrski (Варшава, ул. Мариенштат, 8) для обработки запроса контактной формы, в том числе посредством использования телекоммуникаций (телефон, SMS) и отправки ответа на предоставляемый мной адрес электронной почты. Предоставление вышеуказанных данных является добровольным, но необходимым для обработки запроса. Лицо, предоставляющее персональные данные Администратору, имеет право доступа к своим данным, возможности их исправления, удаления или ограничения обработки, а также права на передачу данных. Больше информации о процессе обработки данных вы найдете в <a href="#">политике конфиденциальности</a>.</p>
                         </div>
+                        <a class="button-gradient" href="">Задать вопрос</a>
                     </form>
                 </div>
             </div>
@@ -150,31 +222,49 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="" alt="">
+                    <img class="footer-logo" src="./images/footer-logo.svg" alt="">
                     <div class="contacts">
                         <div class="contacts-wrap">
                             <p>00-302 Warszawa ul. Mariensztat, 8</p>
                         </div>
                         <div class="contacts-wrap">
-                            <p>31-038 Kraków ul. Starowiślna 1</p>
+                            <p>31-038 Kraków <br>ul. Starowiślna 1</p>
                             <p class="number">+48 50 541 48 87</p>
                         </div>
                         <div class="contacts-wrap">
-                            <p>90-537 Łódź ul. Wólczańska 125</p>
+                            <p>90-537 Łódź <br>ul. Wólczańska 125</p>
                             <p class="number">+48 73 095 47 79</p>
                         </div>
                     </div>
                     <a href="biuro@together-school.pl" target="_blank">biuro@together-school.pl</a>
                 </div>
-                <div class="col-lg-6">
-
+                <div class="col-lg-6 links">
+                    <ul>
+                        <li><a href="">Курсы</a</li>
+                        <li><a href="">Услуги</a></li>
+                        <li><a href="">Отзывы</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Контакт</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Образование в Польше</a</li>
+                        <li><a href="">Визы</a></li>
+                        <li><a href="">ВНЖ</a></li>
+                        <li><a href="">Страхование</a></li>
+                        <li><a href="">Пакет услуг</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://www.facebook.com/together.school/" target="_blank"><img src="./images/facebook.svg" alt=""></a</li>
+                        <li><a href="https://www.instagram.com/together.school/" target="_blank"><img src="./images/instagram-logo.svg" alt=""> </a></li>
+                        <li><a href="https://vk.com/together.school" target="_blank"><img src="./images/vk.svg" alt=""> </a></li>
+                        <li><a href="https://www.youtube.com/channel/UC9bPIvUBINOlr0v61daj6Jw" target="_blank"><img src="./images/youtube.svg" alt=""> </a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

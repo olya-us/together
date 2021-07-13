@@ -1,129 +1,113 @@
+{
+    const sliders = document.querySelectorAll(".slider");
+    const interval = 3800;
+    const animDuration = 600;
+  
+    for (let i = 0; i < sliders.length; ++i) {
+      const slider = sliders[i];
+      const dots = slider.querySelector(".dots");
+      const sliderImgs = slider.querySelectorAll(".img");
+  
+      let currImg = 0;
+      let prevImg = sliderImgs.length - 1;
+      let intrvl;
+      let timeout;
+  
+      // Creates dots and add listeners to them
+      for (let i = 0; i < sliderImgs.length; ++i) {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        dots.appendChild(dot);
+        dot.addEventListener("click", dotClick.bind(null, i), false);
+      }
+  
+      const allDots = dots.querySelectorAll(".dot");
+      allDots[0].classList.add("active-dot");
+  
+      sliderImgs[0].style.left = "0";
+      timeout = setTimeout(() => {
+        animateSlider();
+        sliderImgs[0].style.left = "";
+        intrvl = setInterval(animateSlider, interval);
+      }, interval - animDuration);   
+  
+      /**
+       * Animates images
+       * @param {number} [nextImg] 
+       * @param {boolean} [right = false] 
+       */
+      function animateSlider(nextImg, right) {
+        if (!nextImg)
+          nextImg = currImg + 1 < sliderImgs.length ? currImg + 2 : 1;
+  
+        --nextImg;
+        sliderImgs[prevImg].style.animationName = "";
+  
+        if (!right) {
+          sliderImgs[nextImg].style.animationName = "leftNext";
+          sliderImgs[currImg].style.animationName = "leftCurr";
+        } 
+        else {
+          sliderImgs[nextImg].style.animationName = "rightNext";
+          sliderImgs[currImg].style.animationName = "rightCurr";
+        }
+  
+        prevImg = currImg;
+        currImg = nextImg;
+  
+        currDot = allDots[currImg];
+        currDot.classList.add("active-dot");
+        prevDot = allDots[prevImg];
+        prevDot.classList.remove("active-dot");
+      }
+  
+      /**
+       * Decides if animate to left or right and highlights clicked dot
+       * @param {number} num - index of clicked dot
+       */
+      function dotClick(num) {
+        if (num == currImg)
+          return false;
+  
+        clearTimeout(timeout);
+        clearInterval(intrvl);
+  
+        if (num > currImg)
+          animateSlider(num + 1);
+        else
+          animateSlider(num + 1, true);
+  
+        intrvl = setInterval(animateSlider, interval);
+      }
+    }
+  }
 $(document).ready(function () {
-    $('.click-for-video').click(function() {
-        this.style.display = 'none';
-        $('div.youtube').css('display', 'block');
-        $('iframe.youtube').prop('src', $(this).data('src'));
-        $("iframe.youtube")[0].src += "&autoplay=1";
-        ev.preventDefault();
+
+    $('.tabmenu-wrap .tab-nav').find('a').on('click', function(e) {
+        var $this = $(this);
+       var $all_tab_nav = $this.parents('.tab-nav').find('.nav');
+       var $tab_contents = $this.parents('.tabmenu-wrap').find('.con-box');
+       var id = $this.attr('href');
+     
+       e.preventDefault();
+       $all_tab_nav.removeClass('on');
+       $this.parent().addClass('on');
+       $tab_contents.hide();
+       $(id).show();
     });
 
-    const FULL_DASH_ARRAY = 283;
-    const WARNING_THRESHOLD = 10;
-    const ALERT_THRESHOLD = 5;
 
-    const COLOR_CODES = {
-        info: {
-            color: "green"
-        },
-        warning: {
-            color: "orange",
-            threshold: WARNING_THRESHOLD
-        },
-        alert: {
-            color: "red",
-            threshold: ALERT_THRESHOLD
-        }
-    };
-
-    const TIME_LIMIT = 60;
-    let timePassed = 0;
-    let timeLeft = TIME_LIMIT;
-    let timerInterval = null;
-    let remainingPathColor = COLOR_CODES.info.color;
-
-    document.getElementById("app").innerHTML = `
-    <div class="base-timer">
-    <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <g class="base-timer__circle">
-        <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
-        <path
-            id="base-timer-path-remaining"
-            stroke-dasharray="283"
-            class="base-timer__path-remaining ${remainingPathColor}"
-            d="
-            M 50, 50
-            m -45, 0
-            a 45,45 0 1,0 90,0
-            a 45,45 0 1,0 -90,0
-            "
-        ></path>
-        </g>
-    </svg>
-    <span id="base-timer-label" class="base-timer__label">${formatTime(
-        timeLeft 
-    )}</span>
-    <p>осталось секунд</p>
-    </div>
-    `;
-
-    $('#timer').click( function() {
-        startTimer();
-        $(this).attr("disabled", "disabled");
-    })
-
-    function startTimer() {
-        timePassed = 0;
-        clearInterval(timerInterval);
-        timerInterval = setInterval(() => {
-            timePassed += 1;
-            timeLeft = TIME_LIMIT - timePassed;
-            document.getElementById("base-timer-label").innerHTML = formatTime(
-            timeLeft
-            );
-            setCircleDasharray();
-            setRemainingPathColor(timeLeft);
-
-            if (timeLeft <= 0) {
-                clearInterval(timerInterval);
-                $('#timer').removeAttr("disabled");
-            }
-        }, 1000);
-    }
-
-    function formatTime(time) {
-    if (time == 60)
-        return `${time}`;
-    let seconds = time % 60;
-
-    if (seconds < 10) {
-        seconds = `${seconds}`;
-    }
-
-    return `${seconds}`;
-    }
-
-    function setRemainingPathColor(timeLeft) {
-    const { alert, warning, info } = COLOR_CODES;
-    if (timeLeft <= alert.threshold) {
-        document
-        .getElementById("base-timer-path-remaining")
-        .classList.remove(warning.color);
-        document
-        .getElementById("base-timer-path-remaining")
-        .classList.add(alert.color);
-    } else if (timeLeft <= warning.threshold) {
-        document
-        .getElementById("base-timer-path-remaining")
-        .classList.remove(info.color);
-        document
-        .getElementById("base-timer-path-remaining")
-        .classList.add(warning.color);
-    }
-    }
-
-    function calculateTimeFraction() {
-    const rawTimeFraction = timeLeft / TIME_LIMIT;
-    return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
-    }
-
-    function setCircleDasharray() {
-    const circleDasharray = `${(
-        calculateTimeFraction() * FULL_DASH_ARRAY
-    ).toFixed(0)} 283`;
-    document
-        .getElementById("base-timer-path-remaining")
-        .setAttribute("stroke-dasharray", circleDasharray);
-    }
-
+    $('.palceholder').click(function() {
+        $(this).siblings('input').focus();
+    });
+    $('.form-controller').focus(function() {
+        $(this).siblings('.palceholder').hide();
+    });
+    $('.form-controller').blur(function() {
+        var $this = $(this);
+        if ($this.val().length == 0)
+          $(this).siblings('.palceholder').show();
+    });
+    $('.form-controller').blur();
 });
 

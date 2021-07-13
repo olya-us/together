@@ -3,15 +3,34 @@
   color: #ffffff;
   font-size: 12px;
   padding: 50px 0 100px 0; }
+  .footer a {
+    color: #fff;
+    text-decoration: none; }
+  .footer .footer-logo {
+    width: auto;
+    margin-left: -15px; }
   .footer .contacts {
     display: flex;
     margin-bottom: 30px; }
     .footer .contacts .contacts-wrap:not(:last-child) {
       margin-right: 30px; }
     .footer .contacts p {
-      max-width: 100px;
+      max-width: 110px;
       margin: 0;
       font-size: 12px;
       font-weight: 400px; }
       .footer .contacts p.number {
         font-weight: 500; }
+  .footer .links {
+    display: flex;
+    justify-content: flex-end; }
+    .footer .links ul {
+      list-style: none;
+      padding: 0;
+      margin: 60px 0 0 0; }
+      .footer .links ul li:not(:last-child) {
+        margin-bottom: 10px; }
+      .footer .links ul li a {
+        font-size: 16px; }
+    .footer .links ul:not(:last-child) {
+      margin-right: 80px; }

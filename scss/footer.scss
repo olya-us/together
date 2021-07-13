@@ -3,6 +3,14 @@
     color: #ffffff;
     font-size: 12px;
     padding: 50px 0 100px 0;
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .footer-logo{
+        width: auto;
+        margin-left: -15px;
+    }
     .contacts{
         display: flex;
         margin-bottom: 30px;
@@ -10,13 +18,33 @@
             margin-right: 30px;
         }
         p{
-            max-width: 100px;
+            max-width: 110px;
             margin: 0;
             font-size: 12px;
             font-weight: 400px;
             &.number{
                 font-weight: 500;
             }
+        }
+    }
+    .links{
+        display: flex;
+        justify-content: flex-end;
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 60px 0 0 0;
+            li:not(:last-child){
+                margin-bottom: 10px;
+            }
+            li{
+                a{
+                    font-size: 16px;
+                }
+            }
+        }
+        ul:not(:last-child){
+            margin-right: 80px;
         }
     }
 }
