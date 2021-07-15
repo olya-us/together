@@ -109,5 +109,14 @@ $(document).ready(function () {
           $(this).siblings('.palceholder').show();
     });
     $('.form-controller').blur();
+
+    $('.courses-cards').slick({
+        infinite: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplaySpeed: 3000,
+        dots: false,
+        arrows: true
+    });
 });
 
