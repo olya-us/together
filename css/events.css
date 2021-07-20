@@ -2,5 +2,62 @@
   margin: 160px 0 90px 0; }
   .events p {
     max-width: 650px;
-    margin: 20px auto 0;
-    text-align: center; }
+    margin: 20px auto 0; }
+  .events .event-cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .events .event-cards .event-card {
+      width: 49%;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 5px;
+      margin-bottom: 25px;
+      display: flex;
+      flex-direction: column;
+      height: auto; }
+      .events .event-cards .event-card .event-info {
+        display: flex;
+        height: 100%; }
+        .events .event-cards .event-card .event-info .event-date {
+          background: #CCECFF;
+          text-align: center;
+          border-right: 1px dashed rgba(26, 43, 73, 0.3);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          max-width: 150px;
+          width: 100%; }
+          .events .event-cards .event-card .event-info .event-date .month {
+            color: #1A2B49; }
+            .events .event-cards .event-card .event-info .event-date .month span {
+              font-weight: 800;
+              display: block;
+              font-size: 30px; }
+          .events .event-cards .event-card .event-info .event-date .time {
+            background: #fff;
+            border-radius: 24px;
+            color: #242424;
+            font-weight: 600;
+            display: inline-block;
+            width: max-content;
+            margin: 15px auto 0; }
+            .events .event-cards .event-card .event-info .event-date .time p {
+              margin: 0;
+              padding: 5px 13px; }
+        .events .event-cards .event-card .event-info .description {
+          padding: 15px; }
+          .events .event-cards .event-card .event-info .description .description-name p {
+            color: #1A2B49;
+            font-weight: 600;
+            font-size: 20px;
+            margin: 0 0 1rem 0; }
+          .events .event-cards .event-card .event-info .description .description-text p {
+            margin: 0 0 1rem 0;
+            font-size: 14px; }
+          .events .event-cards .event-card .event-info .description .location p {
+            margin: 0;
+            display: flex; }
+            .events .event-cards .event-card .event-info .description .location p img {
+              width: 10px;
+              margin-right: 5px; }
