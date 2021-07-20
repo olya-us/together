@@ -83,6 +83,8 @@
   }
 $(document).ready(function () {
 
+    $('.dropdown-toggle').dropdown();
+
     $('.tabmenu-wrap .tab-nav').find('a').on('click', function(e) {
         var $this = $(this);
        var $all_tab_nav = $this.parents('.tab-nav').find('.nav');

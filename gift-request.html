@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Together</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="./images/logo.svg" alt=""></a>
+              <div class="info">
+                <p>+48 22 111 50 67</p>
+                <a href="biuro@together-school.pl" target="_blank">biuro@together-school.pl</a>
+                </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="courses.html">Курсы</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Услуги
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Образование в польше</a></li>
+                      <li><a class="dropdown-item" href="#">Визы</a></li>
+                      <li><a class="dropdown-item" href="#">ВНЖ</a></li>
+                      <li><a class="dropdown-item" href="#">Страхование</a></li>
+                      <li><a class="dropdown-item" href="#">Пакеты услуг</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Мероприятия</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">О нас</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Контакт</a>
+                  </li>
+                </ul>
+                <div class="buttons">
+                    <a href="" class="button-gradient">Подать заявку</a>
+                    <a href="" class="button-gradient">Подать заявку</a>
+                </div>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header> 
+
+    <section class="questions">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="main-title text-center">Оставить заявку на подарочную карту</h2>
+                    <form name="questions" method="post">
+                        <div class="input-group">
+                            <div class="form-group name-group">
+                                <div class="palceholder">
+                                    <label for="name">Имя</label>
+                                    <span class="star">*</span>
+                                </div>
+                                <input type="text" class="form-controller" name="name" autocomplete="off" required>
+                            </div>
+                            <div class="form-group name-group">
+                                <div class="palceholder">
+                                  <label for="email">Email</label>
+                                  <span class="star">*</span>
+                                </div>
+                                <input type="email" class="form-controller" name="email" autocomplete="off" required>
+                            </div>
+                            <div class="form-group textarea">
+                                <div class="palceholder">
+                                  <label for="comment">Вопрос</label>
+                                  <span class="star">*</span>
+                                </div>
+                                <textarea name="comment" cols="40" class="form-controller" required></textarea>
+                            </div>
+                        </div>
+                        <div class="agreed">
+                            <input type="checkbox">
+                            <p>Нажимая на кнопку "Отправить", я даю согласие на обработку моих персональных данных Администратором - Школой польского языка Together в лице Michał Suchożebrski (Варшава, ул. Мариенштат, 8) для обработки запроса контактной формы, в том числе посредством использования телекоммуникаций (телефон, SMS) и отправки ответа на предоставляемый мной адрес электронной почты. Предоставление вышеуказанных данных является добровольным, но необходимым для обработки запроса. Лицо, предоставляющее персональные данные Администратору, имеет право доступа к своим данным, возможности их исправления, удаления или ограничения обработки, а также права на передачу данных. Больше информации о процессе обработки данных вы найдете в <a href="#">политике конфиденциальности</a>.</p>
+                        </div>
+                        <a class="button-gradient" href="">Задать вопрос</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="footer-logo" src="./images/footer-logo.svg" alt="">
+                    <div class="contacts">
+                        <div class="contacts-wrap">
+                            <p>00-302 Warszawa ul. Mariensztat, 8</p>
+                        </div>
+                        <div class="contacts-wrap">
+                            <p>31-038 Kraków <br>ul. Starowiślna 1</p>
+                            <p class="number">+48 50 541 48 87</p>
+                        </div>
+                        <div class="contacts-wrap">
+                            <p>90-537 Łódź <br>ul. Wólczańska 125</p>
+                            <p class="number">+48 73 095 47 79</p>
+                        </div>
+                    </div>
+                    <a href="biuro@together-school.pl" target="_blank">biuro@together-school.pl</a>
+                </div>
+                <div class="col-lg-6 links">
+                    <ul>
+                        <li><a href="">Курсы</a</li>
+                        <li><a href="">Услуги</a></li>
+                        <li><a href="">Отзывы</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Контакт</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Образование в Польше</a</li>
+                        <li><a href="">Визы</a></li>
+                        <li><a href="">ВНЖ</a></li>
+                        <li><a href="">Страхование</a></li>
+                        <li><a href="">Пакет услуг</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://www.facebook.com/together.school/" target="_blank"><img src="./images/facebook.svg" alt=""></a</li>
+                        <li><a href="https://www.instagram.com/together.school/" target="_blank"><img src="./images/instagram-logo.svg" alt=""> </a></li>
+                        <li><a href="https://vk.com/together.school" target="_blank"><img src="./images/vk.svg" alt=""> </a></li>
+                        <li><a href="https://www.youtube.com/channel/UC9bPIvUBINOlr0v61daj6Jw" target="_blank"><img src="./images/youtube.svg" alt=""> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>

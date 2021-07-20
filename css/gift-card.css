@@ -1,0 +1,40 @@
+.gift-card {
+  padding: 40px 0; }
+  .gift-card .blue {
+    font-size: 18px; }
+  .gift-card .courses-card {
+    display: flex;
+    flex-direction: column; }
+    .gift-card .courses-card.gift-card {
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(to bottom, #013BCAC4, #EC2EC4C4), url("../images/gift-card-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 12px 15px;
+      height: 100%; }
+      .gift-card .courses-card.gift-card .courses-card-body {
+        background: transparent;
+        padding: 0;
+        max-width: 280px;
+        margin: 0 auto; }
+        .gift-card .courses-card.gift-card .courses-card-body img {
+          width: auto;
+          margin: 35px auto 25px; }
+      .gift-card .courses-card.gift-card h1 {
+        max-width: 300px;
+        margin: 0 auto; }
+      .gift-card .courses-card.gift-card a {
+        background: #fff;
+        color: #00398A;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px;
+        display: inline-block;
+        text-align: center;
+        margin: 60px auto 0;
+        max-width: 300px; }
+    .gift-card .courses-card p {
+      font-size: 20px; }
