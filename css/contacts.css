@@ -1,0 +1,7 @@
+.contacts {
+  display: flex; }
+  .contacts .contacts-info {
+    width: 47%;
+    padding: 150px 5% 0; }
+  .contacts .map {
+    width: 53%; }
