@@ -21,6 +21,11 @@
       color: #000;
       padding-right: 1.5rem;
       padding-left: 1.5rem; }
+    .header .navbar .collapse .navbar-nav .nav-item .dropdown-menu[data-bs-popper] {
+      margin-top: 1.4rem;
+      border: none;
+      border-radius: 0;
+      padding: 0; }
 
 .footer {
   background: #23252C;
@@ -106,7 +111,7 @@
     margin: 0 0 45px 0; }
 
 .events {
-  margin: 160px 0 90px 0; }
+  margin: 0 0 90px 0; }
   .events p {
     max-width: 650px;
     margin: 20px auto 0; }
@@ -169,8 +174,26 @@
               width: 10px;
               margin-right: 5px; }
 
+@media (max-width: 992px) {
+  .events .event-cards .event-card .event-info {
+    flex-direction: column; }
+  .events .event-cards .event-card .event-info .event-date {
+    border-right: none;
+    border-bottom: 1px dashed rgba(26, 43, 73, 0.3);
+    max-width: 100%; }
+  .events .event-cards .event-card .event-info .event-date .time {
+    margin: 15px auto; } }
+
+@media (max-width: 768px) {
+  .events .event-cards .event-card {
+    width: 100%; } }
+
 .education {
-  margin: 45px 0 90px; }
+  padding: 45px 0 90px;
+  background-image: url("../images/contact-bg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain; }
   .education .education-text-centr {
     max-width: 990px;
     text-align: center;
@@ -205,45 +228,86 @@
         .education .cooperation .universities .wrap-block p {
           max-width: 250px; }
 
-.about .collective {
-  padding: 60px 0 80px 0; }
-  .about .collective h2 {
-    margin-bottom: 70px; }
+@media (max-width: 992px) {
+  .education .cooperation .universities .wrap-block {
+    width: 33%; } }
 
-.about .administration {
-  padding: 70px 0 40px 0; }
-  .about .administration.blue-bg {
-    background-color: #F3FAFB; }
-  .about .administration h2 {
-    margin-bottom: 40px; }
-  .about .administration .administration-cards {
-    display: flex;
-    flex-wrap: wrap; }
-    .about .administration .administration-cards .administration-card {
-      text-align: center;
-      margin-bottom: 50px;
-      width: 20%; }
-      .about .administration .administration-cards .administration-card img {
-        width: auto;
-        border-radius: 50%; }
-      .about .administration .administration-cards .administration-card .name {
-        font-weight: 600;
-        font-size: 16px;
-        max-width: 200px;
-        margin: 30px auto 3px; }
-      .about .administration .administration-cards .administration-card .position {
-        font-weight: 400;
-        font-size: 14px;
-        max-width: 200px;
-        margin: 0 auto; }
+@media (max-width: 768px) {
+  .education .cooperation .universities .wrap-block {
+    width: 50%; } }
+
+@media (max-width: 576px) {
+  .education .cooperation .universities .wrap-block img {
+    width: 100px; } }
+
+.about {
+  background-image: url("../images/about-bg.png");
+  background-repeat: no-repeat;
+  background-position: top; }
+  .about .collective {
+    padding: 60px 0 80px 0; }
+    .about .collective h2 {
+      margin-bottom: 70px; }
+  .about .administration {
+    padding: 70px 0 40px 0; }
+    .about .administration.blue-bg {
+      background-color: #F3FAFB; }
+    .about .administration h2 {
+      margin-bottom: 40px; }
+    .about .administration .administration-cards {
+      display: flex;
+      flex-wrap: wrap; }
+      .about .administration .administration-cards .administration-card {
+        text-align: center;
+        margin-bottom: 50px;
+        width: 20%; }
+        .about .administration .administration-cards .administration-card img {
+          width: auto;
+          border-radius: 50%; }
+        .about .administration .administration-cards .administration-card .name {
+          font-weight: 600;
+          font-size: 16px;
+          max-width: 200px;
+          margin: 30px auto 3px; }
+        .about .administration .administration-cards .administration-card .position {
+          font-weight: 400;
+          font-size: 14px;
+          max-width: 200px;
+          margin: 0 auto; }
 
 .contacts {
   display: flex; }
   .contacts .contacts-info {
     width: 47%;
-    padding: 150px 5% 0; }
+    padding: 0 5% 0;
+    background-image: url("../images/contact-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain; }
+    .contacts .contacts-info .offices {
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 0 30px 0; }
+      .contacts .contacts-info .offices .address {
+        max-width: 160px; }
+    .contacts .contacts-info .questions form {
+      margin: 40px auto 0; }
+      .contacts .contacts-info .questions form .input-group {
+        flex-direction: column; }
+        .contacts .contacts-info .questions form .input-group .form-group {
+          width: 100%; }
+      .contacts .contacts-info .questions form .button-gradient {
+        float: right; }
   .contacts .map {
     width: 53%; }
+
+.questions.submit {
+  margin: 100px 0 100px 0; }
+  .questions.submit form {
+    max-width: 100%; }
+    .questions.submit form h2 {
+      margin-bottom: 40px;
+      margin-top: 30px; }
 
 html {
   overflow-x: hidden; }
@@ -280,6 +344,9 @@ a {
 
 img {
   width: 100%; }
+
+.margin-top {
+  margin-top: 150px; }
 
 .wrap-ifarme {
   position: relative;
@@ -668,7 +735,16 @@ img {
       right: 0;
       width: auto; }
 
+.background {
+  background-image: url("../images/main-bg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain; }
+
 .reasons {
+  background-image: url("../images/about-bg.png");
+  background-repeat: no-repeat;
+  background-position: right 50% top -15%;
   padding: 65px 0 80px; }
   .reasons h2 {
     margin-bottom: 70px; }
@@ -678,7 +754,9 @@ img {
 
 .offering {
   padding: 65px 0 75px;
-  background: linear-gradient(91.94deg, #0086F2 -5.4%, #A346B0 123.49%); }
+  background-image: url("../images/gradient-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
   .offering h2 {
     margin-bottom: 50px; }
   .offering .offering-items {
@@ -711,11 +789,13 @@ img {
   .test .test-cards {
     display: flex;
     margin-top: 65px;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
     .test .test-cards .test-card {
       border-radius: 10px;
       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
-      width: 32%; }
+      width: 32%;
+      margin-bottom: 20px; }
       .test .test-cards .test-card .test-card-body {
         padding: 25px 35px;
         border-bottom: 1px solid #EAEAEA;
@@ -747,8 +827,34 @@ img {
   max-width: 955px;
   margin: 0 auto; }
 
+.palceholder {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #63727a;
+  display: none; }
+  .palceholder label {
+    font-weight: 400;
+    font-size: 12px;
+    color: #63727a; }
+  .palceholder .star {
+    color: red; }
+
+input {
+  background: #25A5F233;
+  border: none;
+  padding: 15px 10px;
+  color: #000;
+  border-radius: 5px;
+  width: 100%; }
+  input:focus-visible {
+    outline: none; }
+
+input[type="checkbox"] {
+  width: auto; }
+
 .questions {
-  padding: 65px 0 105px; }
+  margin: 65px 0 105px; }
   .questions form {
     max-width: 835px;
     margin: 60px auto 0; }
@@ -757,35 +863,15 @@ img {
       justify-content: space-between; }
       .questions form .input-group .form-group {
         position: relative;
-        width: 48%; }
-        .questions form .input-group .form-group .palceholder {
-          position: absolute;
-          top: 7px;
-          left: 15px;
-          color: #63727a;
-          display: none; }
-        .questions form .input-group .form-group label {
-          font-weight: 400;
-          font-size: 12px;
-          color: #63727a; }
-        .questions form .input-group .form-group .star {
-          color: red; }
-        .questions form .input-group .form-group input {
-          background: #25A5F233;
-          border: none;
-          padding: 10px;
-          color: #000;
-          border-radius: 5px;
-          width: 100%; }
-          .questions form .input-group .form-group input:focus-visible {
-            outline: none; }
+        width: 48%;
+        margin-bottom: 20px; }
       .questions form .input-group .form-group.textarea {
         width: 100%; }
         .questions form .input-group .form-group.textarea .palceholder {
-          top: 25px; }
+          top: 10px; }
     .questions form textarea {
       padding: 10px;
-      margin: 20px 0;
+      margin: 0 0 20px 0;
       width: 100%;
       resize: none;
       height: 200px;
@@ -833,9 +919,22 @@ img {
   .tab .tabmenu-wrap .tab-con .courses-cards .slick-next:before {
     font-size: 40px; }
   .tab .tabmenu-wrap .tab-con .courses-cards .slick-prev:before {
-    font-size: 40px; } }
+    font-size: 40px; }
+  .test .test-cards .test-card {
+    width: 49%; } }
 
-@media (max-width: 767px) {
-  .tab .tabmenu-wrap .tab-con .courses-cards .courses-card {
-    min-width: 238px;
-    max-width: 238px; } }
+@media (max-width: 576px) {
+  .test .test-cards .test-card {
+    width: 100%; }
+  .offering .offering-item {
+    width: 50%;
+    margin-bottom: 20px; }
+  .offering .offering-item .offering-border img {
+    padding: 15px; }
+  .questions form .input-group {
+    flex-direction: column; }
+    .questions form .input-group .form-group {
+      width: 100%; }
+  .questions .button-gradient {
+    width: 100%;
+    text-align: center; } }

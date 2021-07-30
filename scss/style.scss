@@ -6,6 +6,7 @@
 @import "education";
 @import "about";
 @import "contacts";
+@import "submit";
 
 html{
   overflow-x: hidden;
@@ -50,6 +51,10 @@ a{
 
 img{
   width: 100%;
+}
+
+.margin-top{
+  margin-top: 150px;
 }
 
 .wrap-ifarme{
@@ -518,9 +523,17 @@ img{
   }
 }
 
-
+.background{
+  background-image: url('../images/main-bg.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
 
 .reasons{
+  background-image: url('../images/about-bg.png');
+  background-repeat: no-repeat;
+  background-position: right 50% top -15%;
   padding: 65px 0 80px;
   h2{
     margin-bottom: 70px;
@@ -533,7 +546,9 @@ img{
 
 .offering{
   padding: 65px 0 75px;
-  background: linear-gradient(91.94deg, #0086F2 -5.4%, #A346B0 123.49%);
+  background-image: url('../images/gradient-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   h2{
     margin-bottom: 50px;
   }
@@ -576,10 +591,12 @@ img{
     display: flex;
     margin-top: 65px;
     justify-content: space-between;
+    flex-wrap: wrap;
     .test-card{
       border-radius: 10px;
       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
       width: 32%;
+      margin-bottom: 20px;
       .test-card-body{
         padding: 25px 35px;
         border-bottom: 1px solid #EAEAEA;
@@ -622,8 +639,40 @@ img{
   }
 }
 
+.palceholder{
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #63727a;
+  display: none;
+  label{
+    font-weight: 400;
+    font-size: 12px;
+    color: #63727a;
+  } 
+  .star{
+    color: red
+  }
+}
+
+input {
+  background: #25A5F233;
+  border: none;
+  padding: 15px 10px;
+  color: #000;
+  border-radius: 5px;
+  width: 100%;
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
 .questions{
-  padding: 65px 0 105px;
+  margin: 65px 0 105px;
   form{
     max-width: 835px;
     margin: 60px auto 0;
@@ -633,43 +682,18 @@ img{
       .form-group{
         position: relative;
         width: 48%;
-        .palceholder{
-         position: absolute;
-         top: 7px;
-         left: 15px;
-         color: #63727a;
-         display: none;
-        }
-        label{
-          font-weight: 400;
-          font-size: 12px;
-          color: #63727a;
-        } 
-        .star{
-          color: red
-        }
-        input {
-          background: #25A5F233;
-          border: none;
-          padding: 10px;
-          color: #000;
-          border-radius: 5px;
-          width: 100%;
-          &:focus-visible {
-            outline: none;
-          }
-        }
+        margin-bottom: 20px;
       }
       .form-group.textarea{
         width: 100%;
         .palceholder{
-          top: 25px;
+          top: 10px;
         }
       }
     }
     textarea{
       padding: 10px;
-      margin:20px 0;
+      margin:0 0 20px 0;
       width: 100%;
       resize: none;
       height: 200px;
@@ -736,17 +760,36 @@ img{
     .tab .tabmenu-wrap .tab-con .courses-cards .slick-prev:before {
       font-size: 40px;
     }
-  }
-  @media (max-width: 767px) {
-    .tab .tabmenu-wrap .tab-con .courses-cards .courses-card {
-      min-width: 238px;
-      max-width: 238px;
+    .test .test-cards .test-card {
+      width: 49%;
     }
   }
 
-  // @media (max-width: 625px) {
 
-  // }
+  @media (max-width: 576px) {
+    .test .test-cards .test-card {
+      width: 100%;
+    }
+    .offering .offering-item {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+    .offering .offering-item .offering-border img {
+      padding: 15px;
+    }
+    .questions{
+      form .input-group {
+        flex-direction: column;
+        .form-group {
+          width: 100%;
+        }
+      }
+      .button-gradient{
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 
 
 

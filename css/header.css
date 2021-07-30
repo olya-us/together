@@ -20,3 +20,8 @@
       color: #000;
       padding-right: 1.5rem;
       padding-left: 1.5rem; }
+    .header .navbar .collapse .navbar-nav .nav-item .dropdown-menu[data-bs-popper] {
+      margin-top: 1.4rem;
+      border: none;
+      border-radius: 0;
+      padding: 0; }

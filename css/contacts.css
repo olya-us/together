@@ -2,6 +2,24 @@
   display: flex; }
   .contacts .contacts-info {
     width: 47%;
-    padding: 150px 5% 0; }
+    padding: 0 5% 0;
+    background-image: url("../images/contact-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain; }
+    .contacts .contacts-info .offices {
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 0 30px 0; }
+      .contacts .contacts-info .offices .address {
+        max-width: 160px; }
+    .contacts .contacts-info .questions form {
+      margin: 40px auto 0; }
+      .contacts .contacts-info .questions form .input-group {
+        flex-direction: column; }
+        .contacts .contacts-info .questions form .input-group .form-group {
+          width: 100%; }
+      .contacts .contacts-info .questions form .button-gradient {
+        float: right; }
   .contacts .map {
     width: 53%; }

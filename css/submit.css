@@ -1,0 +1,7 @@
+.questions.submit {
+  margin: 100px 0 100px 0; }
+  .questions.submit form {
+    max-width: 100%; }
+    .questions.submit form h2 {
+      margin-bottom: 40px;
+      margin-top: 30px; }
