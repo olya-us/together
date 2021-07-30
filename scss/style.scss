@@ -232,6 +232,68 @@ img{
   to { left: 100%; }
 }
 
+/* Style for Select */
+
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  display: none; 
+}
+
+.select-selected {
+  background-color: #25A5F233;
+  padding: 15px 10px;
+  color: #000 !important;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 21px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #000 transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #000 transparent;
+  top: 14px;
+}
+
+.select-items div,.select-selected {
+  color: #000;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.select-items {
+  position: absolute;
+  background-color: #d6edfe;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  font-size: 12px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .tab{
   .tabmenu-wrap{
     padding:50px 0px 40px;
@@ -646,7 +708,7 @@ img{
   color: #63727a;
   display: none;
   label{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 12px;
     color: #63727a;
   } 
@@ -683,6 +745,16 @@ input[type="checkbox"] {
         position: relative;
         width: 48%;
         margin-bottom: 20px;
+        .course-cost{
+          margin: 0;
+          text-align: right;
+          font-size: 18px;
+          span{
+            color: #1477c4;
+            font-size: 30px;
+            font-weight: 600;
+          }
+        }
       }
       .form-group.textarea{
         width: 100%;

@@ -5,3 +5,8 @@
     .questions.submit form h2 {
       margin-bottom: 40px;
       margin-top: 30px; }
+    .questions.submit form .input-group {
+      width: 96%;
+      margin: 0 auto; }
+    .questions.submit form .agreed input {
+      margin: 0 20px 0 25px; }

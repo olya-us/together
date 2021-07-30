@@ -72,6 +72,42 @@
             <div class="row">
                 <div class="col-lg-12">
                     <form name="questions" method="post">
+                        <h2>Какой вы хотите курс</h2>
+                        <div class="input-group">
+                            <div class="form-group name-group">
+                                <div class="custom-select">
+                                    <select>
+                                        <option value="0">Полусеместральный курс</option>
+                                      <option value="1">Полусеместральный курс</option>
+                                      <option value="2">Двухнедельный интенсивный курс</option>
+                                      <option value="3">Интенсивный курс</option>
+                                      <option value="4">Семестральный курс</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <div class="form-group name-group">
+                                <div class="custom-select">
+                                    <select>
+                                        <option value="0">Варшава</option>
+                                      <option value="1">Варшава</option>
+                                      <option value="2">Краков</option>
+                                      <option value="3">Лодзь</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <div class="form-group name-group">
+                                <div class="custom-select">
+                                    <select>
+                                      <option value="0">Дата начала</option>
+                                      <option value="1">01.10.2021</option>
+                                      <option value="2">30.11.2021</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <div class="form-group name-group">
+                                <p class="course-cost">Стоимость курса: <span>700 zł</span></p>
+                            </div>
+                        </div>
                         <h2>Контактная информация</h2>
                         <div class="input-group">
                             <div class="form-group name-group">
@@ -217,13 +253,25 @@
                                 <input type="text" class="form-controller" name="language" autocomplete="off" required>
                             </div>
                         </div>
+                        <div class="d-flex">
+                            <div class="agreed">
+                                <input type="checkbox">
+                                <p>Я хочу податься на визу</p>
+                            </div>
+                            <div class="agreed">
+                                <input type="checkbox">
+                                <p>Я хочу податься на ВНЖ</p>
+                            </div>
+                        </div>
                         <div class="input-group">
                             <div class="form-group name-group">
-                                <div class="palceholder">
-                                    <label for="learned">Откуда вы узнали о нашей школе?</label>
-                                    <span class="star">*</span>
+                                <div class="custom-select">
+                                    <select>
+                                        <option value="0">Откуда вы узнали о нашей школе?</option>
+                                        <option value="1">Интернет</option>
+                                        <option value="2">Друзья</option>
+                                    </select>
                                 </div>
-                                <input type="select" class="form-controller" name="learned" autocomplete="off" required>
                             </div>
                         </div>
                         <div class="agreed">
