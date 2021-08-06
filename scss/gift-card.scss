@@ -1,11 +1,24 @@
 .gift-card{
-    padding: 40px 0;
-    .blue{
+    background-image: url('../images/gift-bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    .gift-card-info{
+      padding: 150px 0 50px 0;
+      .blue{
         font-size: 18px;
+      }
+      .fix-width{
+        width: 70%;
+        margin: 40px auto 0;
+      }
+    }
+    #sidebar-wrapper{
+      height: 100%;
     }
     .courses-card{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         &.gift-card{
           text-align: center;
           color: #fff;

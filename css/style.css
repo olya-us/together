@@ -65,12 +65,22 @@
       margin-right: 80px; }
 
 .gift-card {
-  padding: 40px 0; }
-  .gift-card .blue {
-    font-size: 18px; }
+  background-image: url("../images/gift-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom left; }
+  .gift-card .gift-card-info {
+    padding: 150px 0 50px 0; }
+    .gift-card .gift-card-info .blue {
+      font-size: 18px; }
+    .gift-card .gift-card-info .fix-width {
+      width: 70%;
+      margin: 40px auto 0; }
+  .gift-card #sidebar-wrapper {
+    height: 100%; }
   .gift-card .courses-card {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center; }
     .gift-card .courses-card.gift-card {
       text-align: center;
       color: #fff;
@@ -351,7 +361,7 @@ img {
   width: 100%; }
 
 .margin-top {
-  margin-top: 150px; }
+  margin-top: 150px !important; }
 
 .wrap-ifarme {
   position: relative;
