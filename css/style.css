@@ -324,6 +324,27 @@
     .questions.submit form .agreed input {
       margin: 0 20px 0 25px; }
 
+.camp .arrival-dates b {
+  display: block; }
+
+.camp .schedule p {
+  margin: 0; }
+
+.camp .schedule b {
+  width: 150px;
+  display: inline-block; }
+
+.camp .cultural-program ul {
+  list-style: none; }
+
+.camp .cultural-program ul li::before {
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  color: #1577C4; }
+
 html {
   overflow-x: hidden; }
 
@@ -353,6 +374,11 @@ h2.main-title, h2.main-title-white {
   font-weight: 800; }
   h2.main-title-white {
     color: #fff; }
+
+h3 {
+  font-size: 22px;
+  color: #1577C4;
+  font-weight: 600; }
 
 a {
   text-decoration: none; }

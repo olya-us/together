@@ -1,0 +1,20 @@
+.camp .arrival-dates b {
+  display: block; }
+
+.camp .schedule p {
+  margin: 0; }
+
+.camp .schedule b {
+  width: 150px;
+  display: inline-block; }
+
+.camp .cultural-program ul {
+  list-style: none; }
+
+.camp .cultural-program ul li::before {
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  color: #1577C4; }
