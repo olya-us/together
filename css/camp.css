@@ -8,13 +8,21 @@
   width: 150px;
   display: inline-block; }
 
-.camp .cultural-program ul {
-  list-style: none; }
+.camp .cultural-program ul, .camp .course-duration ul {
+  list-style: none;
+  padding-left: 20px; }
 
-.camp .cultural-program ul li::before {
+.camp .cultural-program ul li::before, .camp .course-duration ul li::before {
   content: "\2022";
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
   color: #1577C4; }
+
+.camp .tab {
+  max-width: 648px;
+  margin: 0 auto; }
+
+.camp .block-price {
+  background: #1577C4; }

@@ -334,16 +334,24 @@
   width: 150px;
   display: inline-block; }
 
-.camp .cultural-program ul {
-  list-style: none; }
+.camp .cultural-program ul, .camp .course-duration ul {
+  list-style: none;
+  padding-left: 20px; }
 
-.camp .cultural-program ul li::before {
+.camp .cultural-program ul li::before, .camp .course-duration ul li::before {
   content: "\2022";
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
   color: #1577C4; }
+
+.camp .tab {
+  max-width: 648px;
+  margin: 0 auto; }
+
+.camp .block-price {
+  background: #1577C4; }
 
 html {
   overflow-x: hidden; }
@@ -410,7 +418,8 @@ img {
   font-weight: 600;
   padding: 15px 20px;
   border-radius: 5px;
-  display: inline-block; }
+  display: inline-block;
+  text-align: center; }
 
 .button-gradient:hover {
   color: #fff; }
@@ -605,6 +614,62 @@ img {
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1); }
 
+.detailed-information h3 {
+  margin-top: 30px; }
+
+.detailed-information .block-leavel {
+  display: flex;
+  justify-content: space-between; }
+  .detailed-information .block-leavel .leavel {
+    position: relative;
+    width: 50%; }
+  .detailed-information .block-leavel .leavel:after {
+    content: '';
+    height: 60%;
+    width: 1px;
+    background: #EAEAEA;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 25px; }
+
+.detailed-information .tab {
+  max-width: 648px;
+  margin: 0 auto; }
+
+.detailed-information .block-price {
+  background: #1577C4; }
+
+.block-price {
+  padding: 50px 40px;
+  color: #fff;
+  height: 100%; }
+  .block-price h5 {
+    font-size: 20px;
+    font-weight: 600; }
+  .block-price ul {
+    padding-left: 20px; }
+  .block-price .price {
+    margin-bottom: 20px; }
+    .block-price .price span {
+      font-size: 32px;
+      font-weight: 700;
+      display: block; }
+  .block-price .payment {
+    margin-bottom: 20px; }
+  .block-price .additional-payments {
+    margin-bottom: 20px; }
+  .block-price .payment-info {
+    margin-top: 50px;
+    margin-bottom: 30px; }
+    .block-price .payment-info a {
+      color: #fff;
+      font-weight: bold; }
+  .block-price .button-gradient {
+    background: #fff;
+    color: #000;
+    width: 284px; }
+
 .tab .tabmenu-wrap {
   padding: 50px 0px 40px; }
   .tab .tabmenu-wrap .tab-nav {
@@ -753,7 +818,8 @@ img {
         padding: 12px 15px; }
         .tab .tabmenu-wrap .tab-con .courses-cards .courses-card.gift-card h3 {
           padding-top: 40px;
-          flex: 0 0 auto; }
+          flex: 0 0 auto;
+          color: #fff !important; }
         .tab .tabmenu-wrap .tab-con .courses-cards .courses-card.gift-card .courses-card-body {
           background: transparent;
           flex: 1 0 auto;

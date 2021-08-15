@@ -88,6 +88,7 @@ img{
   padding: 15px 20px;
   border-radius: 5px;
   display: inline-block;
+  text-align: center;
 }
 .button-gradient:hover{
   color: #fff;
@@ -301,6 +302,80 @@ img{
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.detailed-information {
+  h3 {
+    margin-top: 30px;
+  }
+
+  .block-leavel{
+    display: flex;
+    justify-content: space-between;
+    .leavel{
+      position: relative;
+      width: 50%;
+    }
+    .leavel:after{
+      content: '';
+      height: 60%;
+      width: 1px;
+      background: #EAEAEA;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 25px;
+    }
+  }
+
+  .tab {
+    max-width: 648px;
+    margin: 0 auto;
+  }
+
+  .block-price {
+    background: #1577C4;
+  }
+}
+
+.block-price {
+  padding: 50px 40px;
+  color: #fff;
+  height: 100%;
+  h5 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  ul{
+    padding-left: 20px;
+  }
+  .price {
+    margin-bottom: 20px;
+    span {
+      font-size: 32px;
+      font-weight: 700;
+      display: block;
+    }
+  }
+  .payment{
+    margin-bottom: 20px;
+  }
+  .additional-payments{
+    margin-bottom: 20px;
+  }
+  .payment-info {
+    a {
+      color: #fff;
+      font-weight: bold;
+    }
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .button-gradient{
+    background: #fff;
+    color: #000;
+    width: 284px;
+  }
+}
+
 .tab{
   .tabmenu-wrap{
     padding:50px 0px 40px;
@@ -479,6 +554,7 @@ img{
             h3{
               padding-top: 40px;
               flex: 0 0 auto;
+              color: #fff !important;
             }
             .courses-card-body{
               background: transparent;
