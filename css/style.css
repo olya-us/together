@@ -353,6 +353,13 @@
 .camp .block-price {
   background: #1577C4; }
 
+.aplication-sent {
+  padding: 200px 0; }
+  .aplication-sent h2 {
+    margin: 0 0 20px 0; }
+  .aplication-sent img {
+    width: auto; }
+
 html {
   overflow-x: hidden; }
 
@@ -599,7 +606,7 @@ img {
 
 .select-items {
   position: absolute;
-  background-color: #d6edfe;
+  background-color: #ffffff;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   font-size: 12px;
